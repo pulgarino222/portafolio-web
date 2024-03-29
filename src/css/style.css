@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+:root{
+    --color1:#030712;
+    --color2:#111827;
+    --color3:#1F2937;
+    --color4:#374151;
+    --color5:#4B5563;
+    --color6:#6B7280;
+    --color7:#9CA3AF;
+    --color8:#D1D5DB;
+    --color9:#E5E7EB;
+    --color10:#F3F4F6;
+    --color11:#F9FAFB;
+    --colordif:#58D68D;
+    --colordifs:#ABEBC6;
+    --colortrans:rgba(0, 128, 0, 0.1);
+    /* el ultimo color es con transparencia */
+}
+/* en esta linea de acontinuacion porngo lo que voy a usar globalmente e inicializo las margenes y los padding que se tengan por defecto a 0 */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Allura", cursive;
+    font-style: normal; 
+    font-weight: 400;  
+}
+
+/* en el body definimos la imagen de fondo de toda la pagina y usamos casi todas las propiedades para background  */
+body{  
+    background-image: url(../../public/img/imagen\ de\ fondo\ def.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+
+.header{
+    background-color: var(--color3);
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--color11);
+    /* position: fixed;
+    width: 100%; */
+    
+
+}
+.header h1{
+    margin:20px 10px 20px 40px;
+}
+
+/* esta es la barra de navegacion principal y seleccionamos solo los ancord */
+.navmain a{
+    color: var(--color11);
+    text-decoration: none;
+    margin: 5px;
+}
+
+/* con el over le decimos que cuando el cursor este sobre un ancord muestre un fondo de un color distinto */
+ .a:hover{
+    background-color: var(--color7);
+}
+
+.figure{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+   background-color: #9CA3AF;
+   
+
+}
+
+.img{
+    margin: 20px;
+    padding: 20px;
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+    background-color: var(--colordif);
+}
