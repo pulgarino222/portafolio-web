@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Allura&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Lobster&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
 
 :root{
     --color1:#030712;
@@ -21,9 +21,9 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: "Allura", cursive;
-    font-style: normal; 
-    font-weight: 400;  
+    font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 /* en el body definimos la imagen de fondo de toda la pagina y usamos casi todas las propiedades para background  */
@@ -61,12 +61,20 @@ body{
     background-color: var(--color7);
 }
 
+
+.main{
+    display:grid;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+    
+}
 .figure{
-    display: flex;
-    justify-content:center;
-    align-items:center;
-   background-color: #9CA3AF;
-   
+    width: fit-content;
+    /* justify-content:center;
+    align-items:center; */
+   background-image: linear-gradient(var(--colordifs),var(--colortrans));
+   border-radius: 50%;
 
 }
 
@@ -77,4 +85,37 @@ body{
     width: 400px;
     height: 400px;
     background-color: var(--colordif);
+
 }
+
+.section{
+    display:grid;
+    justify-content: center;
+    align-items: center;
+    background-color: #030712;
+    border-radius: 10px;
+    padding-top: 200px;
+    
+}
+.article h2{
+    font-size: 40px;
+}
+.article{
+    display:inline;
+    color: var(--color11);
+    text-align: center;
+    
+}
+.nav2{
+    margin: 10px;
+    text-align: center;
+    
+}
+.nav2 a{
+    justify-content: space-between;
+    margin: 10px;
+}
+.nav2 a:hover{
+    background-color:var(--color7);
+}
+
