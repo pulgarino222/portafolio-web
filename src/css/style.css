@@ -27,11 +27,12 @@
 }
 
 /* en el body definimos la imagen de fondo de toda la pagina y usamos casi todas las propiedades para background  */
-body{  
+.body{  
     background-image: url(../../public/img/imagen\ de\ fondo\ def.jpg);
     background-size:cover;
     background-repeat: no-repeat;
     background-position: center; 
+    z-index: -1;
 }
 
 .header{
@@ -40,20 +41,23 @@ body{
     justify-content: space-between;
     align-items: center;
     color: var(--color11);
-    /* position: fixed;
-    width: 100%; */
-    
+    position: fixed;
+    width: 100%;
+    margin-top: -40px;
+    z-index: 100;
 
 }
 .header h1{
     margin:20px 10px 20px 40px;
 }
 
+
 /* esta es la barra de navegacion principal y seleccionamos solo los ancord */
 .navmain a{
     color: var(--color11);
     text-decoration: none;
     margin: 5px;
+    
 }
 
 /* con el over le decimos que cuando el cursor este sobre un ancord muestre un fondo de un color distinto */
@@ -67,6 +71,8 @@ body{
     justify-content: center;
     align-items: center;
     margin: 40px;
+    position: relative;
+    top: 80px;
     
 }
 .figure{
@@ -75,9 +81,9 @@ body{
     align-items:center; */
    background-image: linear-gradient(var(--colordifs),var(--colortrans));
    border-radius: 50%;
+   z-index: 1;
 
 }
-
 .img{
     margin: 20px;
     padding: 20px;
@@ -95,8 +101,12 @@ body{
     background-color: #030712;
     border-radius: 10px;
     padding-top: 200px;
+    position: relative;
+    bottom:200px ;
     
 }
+
+
 .article h2{
     font-size: 40px;
 }
